@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -26,10 +27,13 @@
             <div class="col-sm-12 col-lg-12">
                 <div class="card">
                     <header class="card-header text-center">
-                        <h1 class="h3">
+                        <nav class="h3 mb-0">
                             <a href="https://github.com/techgaun/active-forks" class="text-body-emphasis">
+                                <span class="visually-hidden">Source code on GitHub</span>
                                 <i class="fa fa-github-alt pull-left" aria-hidden="true"></i>
                             </a>
+                        </nav>
+                        <h1 class="h3">
                             Active GitHub Forks
                         </h1>
                     </header>
@@ -37,8 +41,9 @@
                     <main class="card-body">
                         <search class="mb-3">
                             <form id="form">
+                                <label for="q">Find repository (e.g. "techgaun/github-dorks")</label>
                                 <div class="input-group">
-                                    <input id="q" name="q" class="form-control" type="text" placeholder="techgaun/github-dorks" spellcheck="false">
+                                    <input id="q" name="q" class="form-control" type="text" spellcheck="false">
                                     <span class="input-group-btn">
                                         <button id="find" onClick="fetchData()" type="button" class="btn btn-primary">
                                             <i id="spinner" class="fa fa-spinner fa-pulse fa-fw" hidden></i> Find
@@ -62,3 +67,4 @@
     </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
+</html>
